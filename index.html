@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Rock Paper Scissors</h1>
+      <button
+        onclick="
+      playGame(`Rock`);
+    "
+        class="button_rock"
+      >
+        <img src="rock-emoji.png" width="100%" />
+      </button>
+      <button
+        onclick="
+      playGame(`Paper`);
+    "
+        class="button_paper"
+      >
+        <img src="paper-emoji.png" width="100%" />
+      </button>
+      <button
+        onclick="
+      playGame(`Scissors`);
+      "
+        class="button_scissor"
+      >
+        <img src="scissors-emoji.png" width="100%" />
+      </button>
+      <p id="result"></p>
+      <p id="computermove"></p>
+      <div class="flex_box">
+        <p class="color_font" id="win">Win : 0</p>
+        <p class="color_font" id="lose">lose: 0</p>
+        <p class="color_font" id="tie">tie: 0</p>
+      </div>
+      <button
+        onclick=" score.win = 0
+    score.lose = 0
+    score.tie = 0
+    
+    localStorage.removeItem('score')
+
+    document.getElementById('win').innerHTML = `Win : ${score.win}`
+    document.getElementById('lose').innerHTML = `lose : ${score.lose}`
+    document.getElementById('tie').innerHTML = `tie : ${score.tie}`
+
+    "
+        class="reset"
+      >
+        Reset score
+      </button>
+    </div>
+  </body>
+</html>

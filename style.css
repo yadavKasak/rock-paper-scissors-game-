@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: Helvetica;
+  color: white;
+  padding-top: 1.5em;
+}
+
+.button_rock {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  padding: 2em;
+  margin-right: 2em;
+  margin-top: 3em;
+  cursor: pointer;
+}
+
+.button_paper {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  padding: 2em;
+  margin-right: 2em;
+  margin-top: 3em;
+  cursor: pointer;
+}
+
+.button_scissor {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  padding: 2em;
+  margin-right: 2em;
+  margin-top: 3em;
+  cursor: pointer;
+}
+
+.flex_box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 3em;
+  gap: 2em;
+}
+
+.color_font {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.reset {
+  background-color: white;
+  border: 2px solid white;
+  padding: 0.5em;
+  margin-top: 1em;
+  cursor: pointer;
+  color: black;
+  font-family: Helvetica;
+  font-size: 1em;
+}
+
+#result {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+#computermove {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
